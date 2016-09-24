@@ -1,3 +1,9 @@
+// ================================================================
+// I just realized this file became depricated some time after I 
+// stopped working on my name generator projects. Might be usefull
+// for somebody though.
+// ----------------------------------------------------------------
+
 package japi.filesystem;
 
 import japi.filesystem.*;
