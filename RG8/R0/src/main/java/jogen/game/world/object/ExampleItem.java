@@ -10,5 +10,9 @@ public class ExampleItem extends Item {
   public void give() {
     this.move(e.getActuated.inventory.emptySlot());
   }
-  public void 
+  public void drop(InventoryEvent e) {
+    
+  }
+  public void move(InventoryEvent e) {
+  }
 }
