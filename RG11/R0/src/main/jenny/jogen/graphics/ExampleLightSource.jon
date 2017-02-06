@@ -1,0 +1,8 @@
+#grab("jogen.graphics.LightSource");
+
+@LightSource "Spherical_J1" {
+  spread = 360;
+  color = 0xffffff;
+  distance = 10.0;
+  falloff = 1.0f;
+}
