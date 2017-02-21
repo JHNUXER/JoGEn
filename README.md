@@ -7,4 +7,4 @@ _John's_ ___Game___ Engine
 
 ##Other Projects:
 ###[SFortress]()
-__SFortress__ is a 2D Game engine I hava been working on since February 17, 2017. My goal is to implement a __ *Dwarf Fortress* __ style of gameplay.
+__SFortress__ is a 2D Game engine I hava been working on since February 17, 2017. My goal is to implement a ***Dwarf Fortress*** style of gameplay.
