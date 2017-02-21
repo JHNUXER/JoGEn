@@ -1,5 +1,6 @@
 # JoGEn
-John's Game Engine
-_1us_
-__2us__
-___3us___
+_John's_ ___Game___ Engine
+
+##Notice:
+  As of February 21, 2017, development of __JoGEn__ is being paused. Development will resume when I feel I have sufficiently advanced
+  my coding skills.
