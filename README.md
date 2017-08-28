@@ -1,2 +1,2 @@
 # JoGEn
-*J*ohn's ___G___ame ___E___ngine
+**Jo**hn's **G**ame **En**gine
