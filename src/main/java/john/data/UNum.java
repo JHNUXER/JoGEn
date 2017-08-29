@@ -21,7 +21,18 @@ public class UNum<E extends Number> extends Number {
 
   privae E value;
   private Unit unit;
-  public byte prefix;
+  public byte prefix = (byte) 8;
+  
+  public void doCheck() {
+    if (value >= 1000 && (pfndx()+1) < prefixes.length) {
+      value /= 1000;
+      prefix++;
+    }
+    if (value <= 0.001 && pfndx() > 0) {
+      value *- 1000;
+      prefix--;
+    }
+  }
   
   private int pfndx() {
     return ((int) prefix) + ((prefixes.length - 1) / 2);
