@@ -40,4 +40,7 @@ public class Point3<E extends Number> {
     this.y %= n.y;
     this.z %= n.z;
   }
+  public Matrix<E> toMatrix() {
+    return new Matrix<E>(new String[] {"[0,0]:"+this.x,"[1,0]:"+this.y,"[2,0]:"+this.z});
+  }
 }
