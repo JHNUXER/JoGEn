@@ -22,4 +22,41 @@ public class Angle extends Number {
   public long longValue() {
     return (long) value;
   }
+  
+  public void doCheck() {
+    while (value > 360) {
+      value -= 360;
+    }
+    while (value < 0) {
+      value += 360;
+    }
+  }
+  
+  
+  
+  public Angle add(Angle a) {
+    this.value += a.value;
+    doCheck();
+    return this;
+  }
+  public Angle sub(Angle a) {
+    this.value += a.value;
+    doCheck();
+    return this;
+  }
+  public Angle mul(Angle a) {
+    this.value *= a.value;
+    doCheck();
+    return this;
+  }
+  public Angle div(Angle a) {
+    this.value /= a.value;
+    doCheck();
+    return this;
+  }
+  public Angle mod(Angle a) {
+    this.value %= a.value;
+    doCheck();
+    return this;
+  }
 }
