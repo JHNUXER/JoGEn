@@ -1,9 +1,12 @@
 package john.graphics;
 
+import java.awt.Point;
+
 import static john.math.Trig.*;
 
 public class Projector {
   public void Project(Mesh m,Camera c,Graphics g) {
+    ArrayList<Point> points = new ArrayList<Point>();
     Point3<Double> a = m.position.toPoint(new Double("1.0").getClass());
     Point3<Double> c = c.position.toPoint(new Double("1.0").getClass());
     Angle3 th = c.orientation;
@@ -15,7 +18,8 @@ public class Projector {
     Matrix<Double> zzz = a.toMatrix().sub(c.toMatrix());
     Matrix<Double> r = X.mul(Y).mul(Z).mul(zzz);
     
-    Vector3 n = new Vector3<Double>(r.get(0,0),r.get(1,0),r.get(2,0));
-    n.
+    Vector3 d = new Vector3<Double>(r.get(0,0),r.get(1,0),r.get(2,0));
+    Point2<Double> b = new Point2<Double>((e.z/d.z)*d.x-e.x,(e.z/d.z)*d.y-e.y);
+    points.add(b.toPoint());
   }
 }
