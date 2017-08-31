@@ -7,6 +7,19 @@ public class Angle3 extends Point3<Angle> {
     this.z.doCkeck();
   }
   
+  public Angle3() {
+    this(0f,0f,0f);
+  }
+  public Angle3(Angle x,Angle y,Angle z) {
+    this(x.value,y.value,z.value);
+  }
+  public Angle3(float x,float y,float z) {
+    this.x = new Angle(x);
+    this.y = new Angle(y);
+    this.z = new Angle(z);
+    this.type = new Angle(0f).getClass();
+  }
+  
   public Angle3 add(Angle3 b) {
     this.x.add(b.x);
     this.y.add(b.y);
