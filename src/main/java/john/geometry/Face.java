@@ -12,4 +12,8 @@ public class Face {
     }
     this.material = mat;
   }
+  
+  public Point3D[] toPoint3DArray() {
+    return vertices.toArray(new Point3D[]);
+  }
 }
