@@ -1,5 +1,6 @@
 package john.graphics;
 
+import java.awt.Color;
 import java.awt.image.BufferedImage;
 import john.math.Point3D;
 
